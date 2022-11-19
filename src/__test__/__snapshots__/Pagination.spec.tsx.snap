@@ -1,0 +1,1917 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the landing page 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="pagination-container"
+      >
+        <a
+          class="prev-page"
+        >
+          &lt; prev
+        </a>
+        <a
+          class=""
+        >
+          1
+        </a>
+        <a
+          class=""
+        >
+          2
+        </a>
+        ...
+        <a
+          class=""
+        >
+          6
+        </a>
+        <a
+          class="selected"
+        >
+          7
+        </a>
+        <a
+          class=""
+        >
+          8
+        </a>
+        ...
+        <a
+          class=""
+        >
+          14
+        </a>
+        <a
+          class=""
+        >
+          15
+        </a>
+        <a
+          class="next-page"
+        >
+          next &gt;
+        </a>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="pagination-container"
+    >
+      <a
+        class="prev-page"
+      >
+        &lt; prev
+      </a>
+      <a
+        class=""
+      >
+        1
+      </a>
+      <a
+        class=""
+      >
+        2
+      </a>
+      ...
+      <a
+        class=""
+      >
+        6
+      </a>
+      <a
+        class="selected"
+      >
+        7
+      </a>
+      <a
+        class=""
+      >
+        8
+      </a>
+      ...
+      <a
+        class=""
+      >
+        14
+      </a>
+      <a
+        class=""
+      >
+        15
+      </a>
+      <a
+        class="next-page"
+      >
+        next &gt;
+      </a>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`renders the pagination component: currentPage={1} totalPages={1} 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div />
+  </body>,
+  "container": <div />,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`renders the pagination component: currentPage={1} totalPages={9} 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="pagination-container"
+      >
+        <span
+          class="prev-page disabled"
+        >
+          &lt; prev
+        </span>
+        <a
+          class="selected"
+        >
+          1
+        </a>
+        <a
+          class=""
+        >
+          2
+        </a>
+        <a
+          class=""
+        >
+          3
+        </a>
+        <a
+          class=""
+        >
+          4
+        </a>
+        <a
+          class=""
+        >
+          5
+        </a>
+        <a
+          class=""
+        >
+          6
+        </a>
+        <a
+          class=""
+        >
+          7
+        </a>
+        <a
+          class=""
+        >
+          8
+        </a>
+        <a
+          class=""
+        >
+          9
+        </a>
+        <a
+          class="next-page"
+        >
+          next &gt;
+        </a>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="pagination-container"
+    >
+      <span
+        class="prev-page disabled"
+      >
+        &lt; prev
+      </span>
+      <a
+        class="selected"
+      >
+        1
+      </a>
+      <a
+        class=""
+      >
+        2
+      </a>
+      <a
+        class=""
+      >
+        3
+      </a>
+      <a
+        class=""
+      >
+        4
+      </a>
+      <a
+        class=""
+      >
+        5
+      </a>
+      <a
+        class=""
+      >
+        6
+      </a>
+      <a
+        class=""
+      >
+        7
+      </a>
+      <a
+        class=""
+      >
+        8
+      </a>
+      <a
+        class=""
+      >
+        9
+      </a>
+      <a
+        class="next-page"
+      >
+        next &gt;
+      </a>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`renders the pagination component: currentPage={5} totalPages={9} 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="pagination-container"
+      >
+        <a
+          class="prev-page"
+        >
+          &lt; prev
+        </a>
+        <a
+          class=""
+        >
+          1
+        </a>
+        <a
+          class=""
+        >
+          2
+        </a>
+        <a
+          class=""
+        >
+          3
+        </a>
+        <a
+          class=""
+        >
+          4
+        </a>
+        <a
+          class="selected"
+        >
+          5
+        </a>
+        <a
+          class=""
+        >
+          6
+        </a>
+        <a
+          class=""
+        >
+          7
+        </a>
+        <a
+          class=""
+        >
+          8
+        </a>
+        <a
+          class=""
+        >
+          9
+        </a>
+        <a
+          class="next-page"
+        >
+          next &gt;
+        </a>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="pagination-container"
+    >
+      <a
+        class="prev-page"
+      >
+        &lt; prev
+      </a>
+      <a
+        class=""
+      >
+        1
+      </a>
+      <a
+        class=""
+      >
+        2
+      </a>
+      <a
+        class=""
+      >
+        3
+      </a>
+      <a
+        class=""
+      >
+        4
+      </a>
+      <a
+        class="selected"
+      >
+        5
+      </a>
+      <a
+        class=""
+      >
+        6
+      </a>
+      <a
+        class=""
+      >
+        7
+      </a>
+      <a
+        class=""
+      >
+        8
+      </a>
+      <a
+        class=""
+      >
+        9
+      </a>
+      <a
+        class="next-page"
+      >
+        next &gt;
+      </a>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`renders the pagination component: currentPage={5} totalPages={10} 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="pagination-container"
+      >
+        <a
+          class="prev-page"
+        >
+          &lt; prev
+        </a>
+        <a
+          class=""
+        >
+          1
+        </a>
+        <a
+          class=""
+        >
+          2
+        </a>
+        <a
+          class=""
+        >
+          3
+        </a>
+        <a
+          class=""
+        >
+          4
+        </a>
+        <a
+          class="selected"
+        >
+          5
+        </a>
+        ...
+        <a
+          class=""
+        >
+          9
+        </a>
+        <a
+          class=""
+        >
+          10
+        </a>
+        <a
+          class="next-page"
+        >
+          next &gt;
+        </a>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="pagination-container"
+    >
+      <a
+        class="prev-page"
+      >
+        &lt; prev
+      </a>
+      <a
+        class=""
+      >
+        1
+      </a>
+      <a
+        class=""
+      >
+        2
+      </a>
+      <a
+        class=""
+      >
+        3
+      </a>
+      <a
+        class=""
+      >
+        4
+      </a>
+      <a
+        class="selected"
+      >
+        5
+      </a>
+      ...
+      <a
+        class=""
+      >
+        9
+      </a>
+      <a
+        class=""
+      >
+        10
+      </a>
+      <a
+        class="next-page"
+      >
+        next &gt;
+      </a>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`renders the pagination component: currentPage={5} totalPages={15} 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="pagination-container"
+      >
+        <a
+          class="prev-page"
+        >
+          &lt; prev
+        </a>
+        <a
+          class=""
+        >
+          1
+        </a>
+        <a
+          class=""
+        >
+          2
+        </a>
+        <a
+          class=""
+        >
+          3
+        </a>
+        <a
+          class=""
+        >
+          4
+        </a>
+        <a
+          class="selected"
+        >
+          5
+        </a>
+        ...
+        <a
+          class=""
+        >
+          14
+        </a>
+        <a
+          class=""
+        >
+          15
+        </a>
+        <a
+          class="next-page"
+        >
+          next &gt;
+        </a>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="pagination-container"
+    >
+      <a
+        class="prev-page"
+      >
+        &lt; prev
+      </a>
+      <a
+        class=""
+      >
+        1
+      </a>
+      <a
+        class=""
+      >
+        2
+      </a>
+      <a
+        class=""
+      >
+        3
+      </a>
+      <a
+        class=""
+      >
+        4
+      </a>
+      <a
+        class="selected"
+      >
+        5
+      </a>
+      ...
+      <a
+        class=""
+      >
+        14
+      </a>
+      <a
+        class=""
+      >
+        15
+      </a>
+      <a
+        class="next-page"
+      >
+        next &gt;
+      </a>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`renders the pagination component: currentPage={7} totalPages={15} 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="pagination-container"
+      >
+        <a
+          class="prev-page"
+        >
+          &lt; prev
+        </a>
+        <a
+          class=""
+        >
+          1
+        </a>
+        <a
+          class=""
+        >
+          2
+        </a>
+        ...
+        <a
+          class=""
+        >
+          6
+        </a>
+        <a
+          class="selected"
+        >
+          7
+        </a>
+        <a
+          class=""
+        >
+          8
+        </a>
+        ...
+        <a
+          class=""
+        >
+          14
+        </a>
+        <a
+          class=""
+        >
+          15
+        </a>
+        <a
+          class="next-page"
+        >
+          next &gt;
+        </a>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="pagination-container"
+    >
+      <a
+        class="prev-page"
+      >
+        &lt; prev
+      </a>
+      <a
+        class=""
+      >
+        1
+      </a>
+      <a
+        class=""
+      >
+        2
+      </a>
+      ...
+      <a
+        class=""
+      >
+        6
+      </a>
+      <a
+        class="selected"
+      >
+        7
+      </a>
+      <a
+        class=""
+      >
+        8
+      </a>
+      ...
+      <a
+        class=""
+      >
+        14
+      </a>
+      <a
+        class=""
+      >
+        15
+      </a>
+      <a
+        class="next-page"
+      >
+        next &gt;
+      </a>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`renders the pagination component: currentPage={9} totalPages={9} 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="pagination-container"
+      >
+        <a
+          class="prev-page"
+        >
+          &lt; prev
+        </a>
+        <a
+          class=""
+        >
+          1
+        </a>
+        <a
+          class=""
+        >
+          2
+        </a>
+        <a
+          class=""
+        >
+          3
+        </a>
+        <a
+          class=""
+        >
+          4
+        </a>
+        <a
+          class=""
+        >
+          5
+        </a>
+        <a
+          class=""
+        >
+          6
+        </a>
+        <a
+          class=""
+        >
+          7
+        </a>
+        <a
+          class=""
+        >
+          8
+        </a>
+        <a
+          class="selected"
+        >
+          9
+        </a>
+        <span
+          class="next-page disabled"
+        >
+          next &gt;
+        </span>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="pagination-container"
+    >
+      <a
+        class="prev-page"
+      >
+        &lt; prev
+      </a>
+      <a
+        class=""
+      >
+        1
+      </a>
+      <a
+        class=""
+      >
+        2
+      </a>
+      <a
+        class=""
+      >
+        3
+      </a>
+      <a
+        class=""
+      >
+        4
+      </a>
+      <a
+        class=""
+      >
+        5
+      </a>
+      <a
+        class=""
+      >
+        6
+      </a>
+      <a
+        class=""
+      >
+        7
+      </a>
+      <a
+        class=""
+      >
+        8
+      </a>
+      <a
+        class="selected"
+      >
+        9
+      </a>
+      <span
+        class="next-page disabled"
+      >
+        next &gt;
+      </span>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`renders the pagination component: currentPage={10} totalPages={10} 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="pagination-container"
+      >
+        <a
+          class="prev-page"
+        >
+          &lt; prev
+        </a>
+        <a
+          class=""
+        >
+          1
+        </a>
+        <a
+          class=""
+        >
+          2
+        </a>
+        <a
+          class=""
+        >
+          3
+        </a>
+        <a
+          class=""
+        >
+          4
+        </a>
+        <a
+          class=""
+        >
+          5
+        </a>
+        ...
+        <a
+          class=""
+        >
+          9
+        </a>
+        <a
+          class="selected"
+        >
+          10
+        </a>
+        <span
+          class="next-page disabled"
+        >
+          next &gt;
+        </span>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="pagination-container"
+    >
+      <a
+        class="prev-page"
+      >
+        &lt; prev
+      </a>
+      <a
+        class=""
+      >
+        1
+      </a>
+      <a
+        class=""
+      >
+        2
+      </a>
+      <a
+        class=""
+      >
+        3
+      </a>
+      <a
+        class=""
+      >
+        4
+      </a>
+      <a
+        class=""
+      >
+        5
+      </a>
+      ...
+      <a
+        class=""
+      >
+        9
+      </a>
+      <a
+        class="selected"
+      >
+        10
+      </a>
+      <span
+        class="next-page disabled"
+      >
+        next &gt;
+      </span>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`renders the pagination component: currentPage={10} totalPages={15} 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="pagination-container"
+      >
+        <a
+          class="prev-page"
+        >
+          &lt; prev
+        </a>
+        <a
+          class=""
+        >
+          1
+        </a>
+        <a
+          class=""
+        >
+          2
+        </a>
+        ...
+        <a
+          class=""
+        >
+          9
+        </a>
+        <a
+          class="selected"
+        >
+          10
+        </a>
+        <a
+          class=""
+        >
+          11
+        </a>
+        ...
+        <a
+          class=""
+        >
+          14
+        </a>
+        <a
+          class=""
+        >
+          15
+        </a>
+        <a
+          class="next-page"
+        >
+          next &gt;
+        </a>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="pagination-container"
+    >
+      <a
+        class="prev-page"
+      >
+        &lt; prev
+      </a>
+      <a
+        class=""
+      >
+        1
+      </a>
+      <a
+        class=""
+      >
+        2
+      </a>
+      ...
+      <a
+        class=""
+      >
+        9
+      </a>
+      <a
+        class="selected"
+      >
+        10
+      </a>
+      <a
+        class=""
+      >
+        11
+      </a>
+      ...
+      <a
+        class=""
+      >
+        14
+      </a>
+      <a
+        class=""
+      >
+        15
+      </a>
+      <a
+        class="next-page"
+      >
+        next &gt;
+      </a>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`renders the pagination component: currentPage={11} totalPages={15} 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="pagination-container"
+      >
+        <a
+          class="prev-page"
+        >
+          &lt; prev
+        </a>
+        <a
+          class=""
+        >
+          1
+        </a>
+        <a
+          class=""
+        >
+          2
+        </a>
+        ...
+        <a
+          class=""
+        >
+          10
+        </a>
+        <a
+          class="selected"
+        >
+          11
+        </a>
+        <a
+          class=""
+        >
+          12
+        </a>
+        ...
+        <a
+          class=""
+        >
+          14
+        </a>
+        <a
+          class=""
+        >
+          15
+        </a>
+        <a
+          class="next-page"
+        >
+          next &gt;
+        </a>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="pagination-container"
+    >
+      <a
+        class="prev-page"
+      >
+        &lt; prev
+      </a>
+      <a
+        class=""
+      >
+        1
+      </a>
+      <a
+        class=""
+      >
+        2
+      </a>
+      ...
+      <a
+        class=""
+      >
+        10
+      </a>
+      <a
+        class="selected"
+      >
+        11
+      </a>
+      <a
+        class=""
+      >
+        12
+      </a>
+      ...
+      <a
+        class=""
+      >
+        14
+      </a>
+      <a
+        class=""
+      >
+        15
+      </a>
+      <a
+        class="next-page"
+      >
+        next &gt;
+      </a>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`renders the pagination component: currentPage={14} totalPages={15} 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="pagination-container"
+      >
+        <a
+          class="prev-page"
+        >
+          &lt; prev
+        </a>
+        <a
+          class=""
+        >
+          1
+        </a>
+        <a
+          class=""
+        >
+          2
+        </a>
+        <a
+          class=""
+        >
+          3
+        </a>
+        <a
+          class=""
+        >
+          4
+        </a>
+        <a
+          class=""
+        >
+          5
+        </a>
+        ...
+        <a
+          class="selected"
+        >
+          14
+        </a>
+        <a
+          class=""
+        >
+          15
+        </a>
+        <a
+          class="next-page"
+        >
+          next &gt;
+        </a>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="pagination-container"
+    >
+      <a
+        class="prev-page"
+      >
+        &lt; prev
+      </a>
+      <a
+        class=""
+      >
+        1
+      </a>
+      <a
+        class=""
+      >
+        2
+      </a>
+      <a
+        class=""
+      >
+        3
+      </a>
+      <a
+        class=""
+      >
+        4
+      </a>
+      <a
+        class=""
+      >
+        5
+      </a>
+      ...
+      <a
+        class="selected"
+      >
+        14
+      </a>
+      <a
+        class=""
+      >
+        15
+      </a>
+      <a
+        class="next-page"
+      >
+        next &gt;
+      </a>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
