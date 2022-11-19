@@ -1,5 +1,6 @@
 import * as React from "react";
-import "./Pagination.css";
+import styles from "./Pagination.module.css";
+import cx from "classnames";
 
 interface PaginationProps {
     currentPage: number;
@@ -10,7 +11,7 @@ export function Pagination(props: PaginationProps) {
     const { currentPage, totalPages } = props;
 
     function populateItem(i: number) {
-        return <a className={currentPage === i + 1 ? "selected" : ""}>{++i}</a>;
+        return <a className={currentPage === i + 1 ? cx(styles.btn, styles.selected) : styles.btn}>{++i}</a>;
     }
 
     function renderNavigator() {
@@ -45,17 +46,17 @@ export function Pagination(props: PaginationProps) {
     }
 
     return (
-        <div className="pagination-container">
+        <div className={styles.paginationContainer}>
             {
                 currentPage === 1 ?
-                    <span className="prev-page disabled">&lt; prev</span> :
-                    <a className="prev-page">&lt; prev</a>
+                    <span className={cx(styles.btn, styles.prevPage, styles.disabled)}>&lt; prev</span> :
+                    <a className={cx(styles.btn, styles.prevPage)}>&lt; prev</a>
             }
             {renderNavigator()}
             {
                 currentPage === totalPages ?
-                    <span className="next-page disabled">next &gt;</span> :
-                    <a className="next-page">next &gt;</a>
+                    <span className={cx(styles.btn, styles.nextPage, styles.disabled)}>next &gt;</span> :
+                    <a className={cx(styles.btn, styles.nextPage)}>next &gt;</a>
             }
         </div>
     );
