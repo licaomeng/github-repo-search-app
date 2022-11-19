@@ -28,7 +28,7 @@
 }
 
 @media (min-width: 768px) {
-    .headerLink  {
+    .headerLink {
         margin-inline-start: 25px;
     }
 }
