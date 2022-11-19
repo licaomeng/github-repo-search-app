@@ -1,0 +1,32 @@
+.repoList {
+    position: relative;
+}
+
+.repoListItem {
+    border-top: 1px solid #d0d7de;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.infoBar {
+    display: flex;
+    gap: 15px;
+    font-size: 0.8em;
+}
+
+.repoLanguageColor {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.repoList li p {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+    gap: 3px;
+}
