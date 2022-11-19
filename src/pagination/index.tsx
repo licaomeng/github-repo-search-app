@@ -31,23 +31,25 @@ export function Pagination(props: PaginationProps) {
             return [...Array(totalPages)].map((_, i) => populateItem(i));
         }
 
-        return [...Array(totalPages)].map((_, i) => {
-            if (currentPage < 6 || currentPage > totalPages - 2) {
-                // like 1 2 3 4 ⑤ ... 6 7
+        if (currentPage < 6 || currentPage > totalPages - 2) {
+            // like 1 2 3 4 ⑤ ... 14 15
+            return [...Array(totalPages)].map((_, i) => {
                 if (i === 5) return "...";
                 if (i > 5 && i < totalPages - 2) return null;
-            } else {
-                // like 1 2 ... 6 ⑦ 8 ... 14 15
-                const isNav = Math.abs(currentPage - (i + 1)) < 2 || i < 2 || i > totalPages - 3;
-                const isEllipse = ((i === 3) || (i === totalPages - 3));
-                
-                if (isNav) return populateItem(i);
-                if (isEllipse) return "...";
 
-                return null;
-            }
+                return populateItem(i);
+            });
+        }
 
-            return populateItem(i);
+        // like 1 2 ... 6 ⑦ 8 ... 14 15
+        return [...Array(totalPages)].map((_, i) => {
+            const isNav = Math.abs(currentPage - (i + 1)) < 2 || i < 2 || i > totalPages - 3;
+            const isEllipse = ((i === 3) || (i === totalPages - 3));
+
+            if (isNav) return populateItem(i);
+            if (isEllipse) return "...";
+
+            return null;
         });
     }
 
