@@ -13,6 +13,7 @@
     display: flex;
     gap: 15px;
     font-size: 0.8em;
+    margin-inline-start: 18px;
 }
 
 .repoLanguageColor {
@@ -29,4 +30,8 @@
     align-items: center;
     margin: 6px 0;
     gap: 3px;
+}
+
+.repoList li .desc {
+    margin-inline-start: 18px;
 }

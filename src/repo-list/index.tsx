@@ -42,7 +42,7 @@ export function RepoList({ data }: ListProps) {
                     </svg>
                     <a href={item.html_url}>{item.full_name}</a>
                 </p>
-                <p>{item.description}</p>
+                <p className={styles.desc}>{item.description}</p>
                 <div className={styles.infoBar}>
                     <p>
                         <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true">
