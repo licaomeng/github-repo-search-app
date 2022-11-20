@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./SearchBox.module.css";
-import { createSearchParams, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 
 export function SearchBox() {
     const [searchParams, setSearchParams] = useSearchParams();
@@ -12,9 +12,8 @@ export function SearchBox() {
 
     function handleSubmit(e: React.FormEvent) {
         e.preventDefault();
-        setSearchParams(
-            createSearchParams({ q: text })
-        );
+        searchParams.set("q", text);
+        setSearchParams(searchParams);
     }
 
     return (

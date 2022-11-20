@@ -1,28 +1,38 @@
 import * as React from "react";
 import styles from "./Pagination.module.css";
 import cx from "classnames";
+import { createSearchParams, useSearchParams } from "react-router-dom";
 
 interface PaginationProps {
     currentPage: number;
     totalPages: number;
 }
 
-function navBtn(isNext: boolean, isDisabled: boolean) {
-    const text = isNext ? "Next >" : "< Prev";
-    const style = isNext ? styles.nextPage : styles.prevPage;
-    
-    if (isDisabled) {
-        return <span className={cx(styles.btn, style, styles.disabled)}>{text}</span>;
-    }
-
-    return <a className={cx(styles.btn, style)}>{text}</a>;
-}
-
 export function Pagination(props: PaginationProps) {
     const { currentPage, totalPages } = props;
+    const [searchParams, setSearchParams] = useSearchParams();
 
     function populateItem(i: number) {
-        return <a className={currentPage === i + 1 ? cx(styles.btn, styles.selected) : styles.btn}>{++i}</a>;
+        return <a
+            onClick={handleClick(i + 1)}
+            className={currentPage === i + 1 ? cx(styles.btn, styles.selected) : styles.btn}
+        >{++i}</a>;
+    }
+
+    const handleClick = (index: number) => () => {
+        searchParams.set("p", String(index));
+        setSearchParams(searchParams);
+    };
+
+    function navBtn(isNext: boolean, isDisabled: boolean) {
+        const text = isNext ? "Next >" : "< Prev";
+        const style = isNext ? styles.nextPage : styles.prevPage;
+        
+        if (isDisabled) {
+            return <span className={cx(styles.btn, style, styles.disabled)}>{text}</span>;
+        }
+    
+        return <a onClick={handleClick(isNext ? currentPage + 1 : currentPage - 1)} className={cx(styles.btn, style)}>{text}</a>;
     }
 
     function renderNav() {
