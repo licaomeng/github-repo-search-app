@@ -1,4 +1,5 @@
 .repoList {
+    max-width: 1000px;
     position: relative;
     padding-inline-start: 20px;
     padding-inline-end: 20px;
