@@ -9,7 +9,7 @@ import { throttle } from "./utils";
 import LoadingBar from "react-top-loading-bar";
 import "./App.css";
 
-const octokit = new Octokit({ auth: "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" });
+const octokit = new Octokit();
 const PER_PAGE = 5;
 
 const initBanner = (
