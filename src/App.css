@@ -28,6 +28,8 @@
   color: #61dafb;
 }
 
+#init-search-box,
+.init-banner,
 .total-count {
   max-width: 1000px;
   display: block;
@@ -38,6 +40,15 @@
   font-weight: 600;
   padding-inline-start: 20px;
   padding-inline-end: 20px;
+}
+
+.octicon {
+  vertical-align: text-bottom;
+}
+
+.init-banner h2 {
+  font-size: 1.2em;
+  margin-inline-start: 20px;
 }
 
 @media (min-width: 768px) {

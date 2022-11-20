@@ -12,11 +12,20 @@ import "./App.css";
 const octokit = new Octokit({ auth: "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" });
 const PER_PAGE = 5;
 
+const initBanner = (
+  <h2>
+    <svg className="octicon" aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true">
+      <path fill-rule="evenodd" d="M10.25 2a8.25 8.25 0 105.28 14.59l5.69 5.69a.75.75 0 101.06-1.06l-5.69-5.69A8.25 8.25 0 0010.25 2zM3.5 10.25a6.75 6.75 0 1113.5 0 6.75 6.75 0 01-13.5 0z"></path>
+    </svg>
+    Search more than <strong>358M</strong> repositories
+  </h2>
+);
+
 function App() {
   const [repoList, setRepoList] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [searchParams] = useSearchParams();
-  const [_, setQuery] = useState("");
+  const [query, setQuery] = useState("");
   const [totalCount, setTotalCount] = useState(0);
   const [progress, setProgress] = useState(0);
   let intervalId = 0;
@@ -50,7 +59,7 @@ function App() {
     return () => {
       window.clearInterval(intervalId);
     };
-}, []);
+  }, []);
 
   // pass searchParams as a dependency into the useEffect
   useEffect(() => {
@@ -75,10 +84,17 @@ function App() {
         progress={progress}
       />
       <Header><SearchBox isInHeader={true}></SearchBox></Header>
-      <span id="search-box"><SearchBox isInHeader={false}></SearchBox></span>
-      <div className="total-count">{totalCount.toLocaleString()} available repository results</div>
-      <RepoList data={repoList}></RepoList>
-      <Pagination currentPage={currentPage} totalPages={totalPages}></Pagination>
+      {
+        query === "" ? <>
+          <span className="init-banner">{initBanner}</span>
+          <span id="init-search-box"><SearchBox isInHeader={false}></SearchBox></span>
+        </> : <>
+          <span id="search-box"><SearchBox isInHeader={false}></SearchBox></span>
+          <div className="total-count">{totalCount.toLocaleString()} available repository results</div>
+          <RepoList data={repoList}></RepoList>
+          <Pagination currentPage={currentPage} totalPages={totalPages}></Pagination>
+        </>
+      }
     </>
   );
 }
