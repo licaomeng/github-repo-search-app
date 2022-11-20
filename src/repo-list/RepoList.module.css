@@ -1,5 +1,10 @@
 .repoList {
     position: relative;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .repoListItem {
@@ -34,4 +39,9 @@
 
 .repoList li .desc {
     margin-inline-start: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }

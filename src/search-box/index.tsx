@@ -1,12 +1,18 @@
 import { useState } from "react";
 import styles from "./SearchBox.module.css";
 import { useSearchParams } from "react-router-dom";
+import cx from "classnames";
 
-export function SearchBox() {
+interface SearchBoxProp {
+    isInHeader: boolean;
+}
+
+export function SearchBox(props: SearchBoxProp) {
     const [searchParams, setSearchParams] = useSearchParams();
     const [text, setText] = useState(searchParams.get("q") || "");
 
     function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+        e.stopPropagation();
         setText(e.target.value);
     }
 
@@ -17,7 +23,7 @@ export function SearchBox() {
     }
 
     return (
-        <form className={styles.form} onSubmit={handleSubmit}>
+        <form className={cx(styles.form)} onSubmit={handleSubmit}>
             <input
                 aria-label="Search GitHub"
                 autoCapitalize="off"
@@ -29,9 +35,13 @@ export function SearchBox() {
                 spellCheck="false"
                 type="text"
                 value={text}
+                onClick={(e) => e.stopPropagation()}
                 onChange={handleChange}
             ></input>
-            <button className={styles.btn} type="submit">Search</button>
+            {
+                !props.isInHeader && <button className={styles.btn} type="submit" onClick={handleSubmit}>Search</button>
+            }
+            
         </form>
     );
 }
