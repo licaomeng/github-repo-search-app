@@ -9,17 +9,19 @@ import { throttle } from "./utils";
 import LoadingBar from "react-top-loading-bar";
 import "./App.css";
 
-const octokit = new Octokit({ auth: "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" });
+const octokit = new Octokit({ auth: "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" });
 const PER_PAGE = 5;
 
 const initBanner = (
   <h2>
     <svg className="octicon" aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true">
-      <path fill-rule="evenodd" d="M10.25 2a8.25 8.25 0 105.28 14.59l5.69 5.69a.75.75 0 101.06-1.06l-5.69-5.69A8.25 8.25 0 0010.25 2zM3.5 10.25a6.75 6.75 0 1113.5 0 6.75 6.75 0 01-13.5 0z"></path>
+      <path fillRule="evenodd" d="M10.25 2a8.25 8.25 0 105.28 14.59l5.69 5.69a.75.75 0 101.06-1.06l-5.69-5.69A8.25 8.25 0 0010.25 2zM3.5 10.25a6.75 6.75 0 1113.5 0 6.75 6.75 0 01-13.5 0z"></path>
     </svg>
     Search more than <strong>358M</strong> repositories
   </h2>
 );
+
+const fetchThrottle = throttle(octokit.request, 2000);
 
 function App() {
   const [repoList, setRepoList] = useState([]);
@@ -30,32 +32,28 @@ function App() {
   const [progress, setProgress] = useState(0);
   let intervalId = 0;
 
-  const fetchThrottle = throttle(octokit.request, 1000);
-
   async function fetchRepo(q = "", page = 1, per_page = PER_PAGE) {
-    if (q === "") {
-      return;
-    }
+    if (q === "") return;
 
     setProgress(0);
-    intervalId = window.setInterval(() => setProgress((progress) => progress + 10), 500);
+
+    intervalId = window.setInterval(() => {
+      setProgress((progress) => progress + 10);
+      window.clearInterval(intervalId);
+    }, 500);
+
     const { data } = await fetchThrottle("GET /search/repositories?q={q}&per_page={per_page}", {
       q,
       page,
       per_page
     });
 
-    clearInterval(intervalId);
     setProgress(100);
-
-    console.log(data);
-
     setRepoList(data.items);
     setTotalCount(data.total_count);
   }
 
   useEffect(() => {
-
     return () => {
       window.clearInterval(intervalId);
     };
