@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { Octokit } from "@octokit/core";
 import { retry } from "@octokit/plugin-retry";
 import { useSearchParams } from "react-router-dom";
@@ -29,6 +29,14 @@ const initBanner = (
 
 const fetchThrottle = throttle(octokit.request, 2000);
 
+async function fetchRepo(q = "", page = 1, per_page = PER_PAGE) {
+  if (q === "") return;
+
+  const { data } = await fetchThrottle(FETCH_REPO_URL, { q, page, per_page }) as any;
+
+  return data;
+}
+
 function App() {
   const [repoList, setRepoList] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -42,13 +50,23 @@ function App() {
     setTheme(theme);
   }
 
-  async function fetchRepo(q = "", page = 1, per_page = PER_PAGE) {
-    if (q === "") return;
+  const fetch = useMemo(() => progressWrapper(fetchRepo, setProgress), []);
 
-    const { data } = await fetchThrottle(FETCH_REPO_URL, { q, page, per_page }) as any;
+  // pass searchParams as a dependency into the useEffect
+  useEffect(() => {
+    const q = searchParams.get("q") || "";
+    const page = Number(searchParams.get("p") || 1);
 
-    return data;
-  }
+    setQuery(q);
+    setCurrentPage(page || 1);
+
+    fetch(q, page).then(res => {
+      if (res) {
+        setRepoList(res.items);
+        setTotalCount(res.total_count);
+      }
+    });
+  }, [searchParams]);
 
   useEffect(() => {
     // Add listener to update styles
@@ -63,24 +81,6 @@ function App() {
       darkMatchMedia.removeEventListener("change", () => { });
     };
   }, []);
-
-  // pass searchParams as a dependency into the useEffect
-  useEffect(() => {
-    const q = searchParams.get("q") || "";
-    const page = Number(searchParams.get("p") || 1);
-
-    setQuery(q);
-    setCurrentPage(page || 1);
-    const fetch = progressWrapper(fetchRepo, setProgress);
-
-    fetch(q, page).then(res => {
-      if (res) {
-        setRepoList(res.items);
-        setTotalCount(res.total_count);
-      }
-    });
-
-  }, [searchParams]);
 
   // Only the first 1000 search results are available
   const totalPages = Math.min(Math.ceil(totalCount / PER_PAGE), 1000 / PER_PAGE);

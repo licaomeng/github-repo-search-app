@@ -7,6 +7,8 @@ export function progressWrapper<F extends (...args: any[]) => any>(fetch: F, set
     let intervalId: number | null;
 
     return async (...args: Parameters<F>): Promise<ReturnPromiseType<F> | undefined> => {
+        setProgress(0);
+        window.clearInterval(intervalId as number);
         intervalId = window.setInterval(() => {
             setProgress((progress: number) => progress + 10);
         }, 500);
@@ -17,7 +19,7 @@ export function progressWrapper<F extends (...args: any[]) => any>(fetch: F, set
             console.log(error);
         } finally {
             setProgress(100);
-            clearInterval(intervalId);
+            window.clearInterval(intervalId);
         }
     };
 }
