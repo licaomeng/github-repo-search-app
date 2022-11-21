@@ -31,7 +31,11 @@ export function Header(props: HeaderProps) {
 
     return (
         <div className={styles.header}>
-            <a aria-label="Homepage" ref={ref} className={styles.headerLink} href="/">
+            <a
+                ref={ref}
+                aria-label="Homepage"
+                className={styles.headerLink}
+                href={process.env.NODE_ENV === "production" ? "/github-repo-search-app" : "/"}>
                 <Octicon />
             </a>
             <span className={styles.searchBox}>{props.children}</span>
