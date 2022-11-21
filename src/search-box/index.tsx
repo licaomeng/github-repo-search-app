@@ -4,11 +4,11 @@ import styles from "./SearchBox.module.css";
 import { useSearchParams } from "react-router-dom";
 import cx from "classnames";
 
-interface SearchBoxProp {
+type SearchBoxProps = {
     isInHeader: boolean;
 }
 
-export function SearchBox(props: SearchBoxProp) {
+export function SearchBox(props: SearchBoxProps) {
     const [searchParams, setSearchParams] = useSearchParams();
     const [text, setText] = useState(searchParams.get("q") || "");
 

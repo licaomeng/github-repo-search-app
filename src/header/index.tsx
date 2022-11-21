@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { Octicon } from "../assets";
 import styles from "./Header.module.css";
 
-interface HeaderProps {
+type HeaderProps = {
     children?: any;
 }
 

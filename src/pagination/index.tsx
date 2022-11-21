@@ -3,7 +3,7 @@ import styles from "./Pagination.module.css";
 import cx from "classnames";
 import { useSearchParams } from "react-router-dom";
 
-interface PaginationProps {
+type PaginationProps = {
     currentPage: number;
     totalPages: number;
 }

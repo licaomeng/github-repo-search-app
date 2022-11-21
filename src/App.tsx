@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
+import { Octokit } from "@octokit/core";
+import { useSearchParams } from "react-router-dom";
+import LoadingBar from "react-top-loading-bar";
 import { Pagination } from "./pagination";
 import { RepoList } from "./repo-list";
 import { Header } from "./header";
 import { SearchBox } from "./search-box";
-import { Octokit } from "@octokit/core";
-import { useSearchParams } from "react-router-dom";
 import { throttle, ErrorBoundary } from "./utils";
 import { Search } from "./assets";
-import LoadingBar from "react-top-loading-bar";
 import "./App.css";
 
 const octokit = new Octokit();

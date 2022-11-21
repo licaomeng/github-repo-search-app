@@ -23,14 +23,20 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "jest": {
+    "verbose": true,
     "testEnvironment": "jest-environment-jsdom",
     "moduleNameMapper": {
       "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js"
-    }
+    },
+    "testRegex": "(?<!\\.node)\\.spec\\.(js|ts)x?$",
+    "preset": "jest-puppeteer",
+    "transformIgnorePatterns": [
+        "node_modules/(?!variables/.*)"
+    ]
   },
   "babel": {
     "presets": [
@@ -50,5 +56,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "jest-puppeteer": "^6.1.1"
   }
 }

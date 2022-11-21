@@ -4,17 +4,17 @@ import { Star, Repo } from "../assets";
 import styles from "./RepoList.module.css";
 
 type dataList = {
-    name?: string
-    full_name: string
-    html_url: string
-    description: string
-    updated_at: string
-    stargazers_count: number
-    language: string
+    name?: string;
+    full_name: string;
+    html_url: string;
+    description: string;
+    updated_at: string;
+    stargazers_count: number;
+    language: string;
 }[];
 
-interface ListProps {
-    data: dataList
+type ListProps = {
+    data: dataList;
 }
 
 export function RepoList({ data }: ListProps) {
