@@ -29,7 +29,7 @@ export function SearchBox(props: SearchBoxProps) {
             className={cx(styles.form)}
             onSubmit={handleSubmit}>
             <input
-                aria-label="Search GitHub"
+                aria-label="Search GitHub Repo"
                 autoCapitalize="off"
                 autoComplete="off"
                 className={styles.searchBox}

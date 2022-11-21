@@ -14,6 +14,7 @@ export function Pagination(props: PaginationProps) {
 
     function populateItem(i: number) {
         return <a
+            aria-label={`Page ${i + 1}`}
             key={`nav-item-${i}`}
             onClick={handleClick(i + 1)}
             className={currentPage === i + 1 ? cx(styles.btn, styles.selected) : styles.btn}

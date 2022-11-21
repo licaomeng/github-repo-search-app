@@ -26,6 +26,18 @@ function App() {
   const [query, setQuery] = useState("");
   const [totalCount, setTotalCount] = useState(0);
   const [progress, setProgress] = useState(0);
+  const [theme, setTheme] = useState("light");
+
+  const onSelectTheme = (theme: "dark" | "light") => {
+    setTheme(theme);
+
+    if (theme === "dark") {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  };
+
   let intervalId = 0;
 
   async function fetchRepo(q = "", page = 1, per_page = PER_PAGE) {
@@ -50,8 +62,17 @@ function App() {
   }
 
   useEffect(() => {
+    // Add listener to update styles
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => onSelectTheme(e.matches ? "dark" : "light"));
+
+    // Setup dark/light mode for the first time
+    onSelectTheme(window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+
+    // Remove listener
     return () => {
       window.clearInterval(intervalId);
+      window.matchMedia("(prefers-color-scheme: dark)").removeEventListener("change", () => {
+      });
     };
   }, []);
 
@@ -71,7 +92,7 @@ function App() {
   const totalPages = Math.min(Math.ceil(totalCount / PER_PAGE), 1000 / PER_PAGE);
 
   return (
-    <>
+    <div className="github-repo-search-page" data-theme={theme}>
       <LoadingBar
         height={3}
         color="#0969da"
@@ -101,7 +122,7 @@ function App() {
           </ErrorBoundary>
         </>
       }
-    </>
+    </div>
   );
 }
 

@@ -32,3 +32,15 @@
     display: none;
   }
 }
+
+.github-repo-search-page {
+  color: var(--color-fg-default);
+  background-color: var(--color-canvas-default);
+}
+
+.octicon {
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}

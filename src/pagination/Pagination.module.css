@@ -3,10 +3,11 @@
     align-items: center;
     justify-content: center;
     margin: 0 20px;
+    padding-bottom: 20px;
 }
 
 .btn {
-    color: #24292f;
+    color: var(--color-fg-default);
     border-color: transparent;
     margin: 0 2px;
     padding: 5px 10px;
@@ -36,7 +37,7 @@
 
 .nextPage,
 .prevPage {
-    color: #0969da;
+    color: var(--color-accent-emphasis);
 }
 
 .disabled {

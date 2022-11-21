@@ -31,10 +31,10 @@ export function Header(props: HeaderProps) {
 
     return (
         <div className={styles.header}>
-            <a ref={ref} className={styles.headerLink} href="/">
+            <a aria-label="Homepage" ref={ref} className={styles.headerLink} href="/">
                 <Octicon />
-                <span className={styles.searchBox}>{props.children}</span>
             </a>
+            <span className={styles.searchBox}>{props.children}</span>
         </div>
     );
 }
