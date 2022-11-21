@@ -10,6 +10,7 @@ Object {
           <p>
             <svg
               aria-hidden="true"
+              class="octicon"
               data-view-component="true"
               height="16"
               version="1.1"
@@ -34,6 +35,7 @@ Object {
             <p>
               <svg
                 aria-label="star"
+                class="octicon"
                 data-view-component="true"
                 height="16"
                 role="img"
@@ -69,6 +71,7 @@ Object {
         <p>
           <svg
             aria-hidden="true"
+            class="octicon"
             data-view-component="true"
             height="16"
             version="1.1"
@@ -93,6 +96,7 @@ Object {
           <p>
             <svg
               aria-label="star"
+              class="octicon"
               data-view-component="true"
               height="16"
               role="img"
@@ -185,6 +189,7 @@ Object {
           <p>
             <svg
               aria-hidden="true"
+              class="octicon"
               data-view-component="true"
               height="16"
               version="1.1"
@@ -209,6 +214,7 @@ Object {
             <p>
               <svg
                 aria-label="star"
+                class="octicon"
                 data-view-component="true"
                 height="16"
                 role="img"
@@ -239,6 +245,7 @@ Object {
           <p>
             <svg
               aria-hidden="true"
+              class="octicon"
               data-view-component="true"
               height="16"
               version="1.1"
@@ -263,6 +270,7 @@ Object {
             <p>
               <svg
                 aria-label="star"
+                class="octicon"
                 data-view-component="true"
                 height="16"
                 role="img"
@@ -293,6 +301,7 @@ Object {
           <p>
             <svg
               aria-hidden="true"
+              class="octicon"
               data-view-component="true"
               height="16"
               version="1.1"
@@ -317,6 +326,7 @@ Object {
             <p>
               <svg
                 aria-label="star"
+                class="octicon"
                 data-view-component="true"
                 height="16"
                 role="img"
@@ -352,6 +362,7 @@ Object {
         <p>
           <svg
             aria-hidden="true"
+            class="octicon"
             data-view-component="true"
             height="16"
             version="1.1"
@@ -376,6 +387,7 @@ Object {
           <p>
             <svg
               aria-label="star"
+              class="octicon"
               data-view-component="true"
               height="16"
               role="img"
@@ -406,6 +418,7 @@ Object {
         <p>
           <svg
             aria-hidden="true"
+            class="octicon"
             data-view-component="true"
             height="16"
             version="1.1"
@@ -430,6 +443,7 @@ Object {
           <p>
             <svg
               aria-label="star"
+              class="octicon"
               data-view-component="true"
               height="16"
               role="img"
@@ -460,6 +474,7 @@ Object {
         <p>
           <svg
             aria-hidden="true"
+            class="octicon"
             data-view-component="true"
             height="16"
             version="1.1"
@@ -484,6 +499,7 @@ Object {
           <p>
             <svg
               aria-label="star"
+              class="octicon"
               data-view-component="true"
               height="16"
               role="img"

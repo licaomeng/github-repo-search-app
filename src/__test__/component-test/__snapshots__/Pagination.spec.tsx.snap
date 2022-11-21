@@ -74,32 +74,49 @@ Object {
         </span>
         <div>
           <a
+            aria-label="Page 1"
             class=""
           >
             1
           </a>
-          <a>
+          <a
+            aria-label="Page 2"
+          >
             2
           </a>
-          <a>
+          <a
+            aria-label="Page 3"
+          >
             3
           </a>
-          <a>
+          <a
+            aria-label="Page 4"
+          >
             4
           </a>
-          <a>
+          <a
+            aria-label="Page 5"
+          >
             5
           </a>
-          <a>
+          <a
+            aria-label="Page 6"
+          >
             6
           </a>
-          <a>
+          <a
+            aria-label="Page 7"
+          >
             7
           </a>
-          <a>
+          <a
+            aria-label="Page 8"
+          >
             8
           </a>
-          <a>
+          <a
+            aria-label="Page 9"
+          >
             9
           </a>
         </div>
@@ -120,32 +137,49 @@ Object {
       </span>
       <div>
         <a
+          aria-label="Page 1"
           class=""
         >
           1
         </a>
-        <a>
+        <a
+          aria-label="Page 2"
+        >
           2
         </a>
-        <a>
+        <a
+          aria-label="Page 3"
+        >
           3
         </a>
-        <a>
+        <a
+          aria-label="Page 4"
+        >
           4
         </a>
-        <a>
+        <a
+          aria-label="Page 5"
+        >
           5
         </a>
-        <a>
+        <a
+          aria-label="Page 6"
+        >
           6
         </a>
-        <a>
+        <a
+          aria-label="Page 7"
+        >
           7
         </a>
-        <a>
+        <a
+          aria-label="Page 8"
+        >
           8
         </a>
-        <a>
+        <a
+          aria-label="Page 9"
+        >
           9
         </a>
       </div>
@@ -222,33 +256,50 @@ Object {
           &lt; Prev
         </a>
         <div>
-          <a>
+          <a
+            aria-label="Page 1"
+          >
             1
           </a>
-          <a>
+          <a
+            aria-label="Page 2"
+          >
             2
           </a>
-          <a>
+          <a
+            aria-label="Page 3"
+          >
             3
           </a>
-          <a>
+          <a
+            aria-label="Page 4"
+          >
             4
           </a>
           <a
+            aria-label="Page 5"
             class=""
           >
             5
           </a>
-          <a>
+          <a
+            aria-label="Page 6"
+          >
             6
           </a>
-          <a>
+          <a
+            aria-label="Page 7"
+          >
             7
           </a>
-          <a>
+          <a
+            aria-label="Page 8"
+          >
             8
           </a>
-          <a>
+          <a
+            aria-label="Page 9"
+          >
             9
           </a>
         </div>
@@ -268,33 +319,50 @@ Object {
         &lt; Prev
       </a>
       <div>
-        <a>
+        <a
+          aria-label="Page 1"
+        >
           1
         </a>
-        <a>
+        <a
+          aria-label="Page 2"
+        >
           2
         </a>
-        <a>
+        <a
+          aria-label="Page 3"
+        >
           3
         </a>
-        <a>
+        <a
+          aria-label="Page 4"
+        >
           4
         </a>
         <a
+          aria-label="Page 5"
           class=""
         >
           5
         </a>
-        <a>
+        <a
+          aria-label="Page 6"
+        >
           6
         </a>
-        <a>
+        <a
+          aria-label="Page 7"
+        >
           7
         </a>
-        <a>
+        <a
+          aria-label="Page 8"
+        >
           8
         </a>
-        <a>
+        <a
+          aria-label="Page 9"
+        >
           9
         </a>
       </div>
@@ -371,28 +439,41 @@ Object {
           &lt; Prev
         </a>
         <div>
-          <a>
+          <a
+            aria-label="Page 1"
+          >
             1
           </a>
-          <a>
+          <a
+            aria-label="Page 2"
+          >
             2
           </a>
-          <a>
+          <a
+            aria-label="Page 3"
+          >
             3
           </a>
-          <a>
+          <a
+            aria-label="Page 4"
+          >
             4
           </a>
           <a
+            aria-label="Page 5"
             class=""
           >
             5
           </a>
           ...
-          <a>
+          <a
+            aria-label="Page 9"
+          >
             9
           </a>
-          <a>
+          <a
+            aria-label="Page 10"
+          >
             10
           </a>
         </div>
@@ -412,28 +493,41 @@ Object {
         &lt; Prev
       </a>
       <div>
-        <a>
+        <a
+          aria-label="Page 1"
+        >
           1
         </a>
-        <a>
+        <a
+          aria-label="Page 2"
+        >
           2
         </a>
-        <a>
+        <a
+          aria-label="Page 3"
+        >
           3
         </a>
-        <a>
+        <a
+          aria-label="Page 4"
+        >
           4
         </a>
         <a
+          aria-label="Page 5"
           class=""
         >
           5
         </a>
         ...
-        <a>
+        <a
+          aria-label="Page 9"
+        >
           9
         </a>
-        <a>
+        <a
+          aria-label="Page 10"
+        >
           10
         </a>
       </div>
@@ -510,28 +604,41 @@ Object {
           &lt; Prev
         </a>
         <div>
-          <a>
+          <a
+            aria-label="Page 1"
+          >
             1
           </a>
-          <a>
+          <a
+            aria-label="Page 2"
+          >
             2
           </a>
-          <a>
+          <a
+            aria-label="Page 3"
+          >
             3
           </a>
-          <a>
+          <a
+            aria-label="Page 4"
+          >
             4
           </a>
           <a
+            aria-label="Page 5"
             class=""
           >
             5
           </a>
           ...
-          <a>
+          <a
+            aria-label="Page 14"
+          >
             14
           </a>
-          <a>
+          <a
+            aria-label="Page 15"
+          >
             15
           </a>
         </div>
@@ -551,28 +658,41 @@ Object {
         &lt; Prev
       </a>
       <div>
-        <a>
+        <a
+          aria-label="Page 1"
+        >
           1
         </a>
-        <a>
+        <a
+          aria-label="Page 2"
+        >
           2
         </a>
-        <a>
+        <a
+          aria-label="Page 3"
+        >
           3
         </a>
-        <a>
+        <a
+          aria-label="Page 4"
+        >
           4
         </a>
         <a
+          aria-label="Page 5"
           class=""
         >
           5
         </a>
         ...
-        <a>
+        <a
+          aria-label="Page 14"
+        >
           14
         </a>
-        <a>
+        <a
+          aria-label="Page 15"
+        >
           15
         </a>
       </div>
@@ -649,29 +769,42 @@ Object {
           &lt; Prev
         </a>
         <div>
-          <a>
+          <a
+            aria-label="Page 1"
+          >
             1
           </a>
-          <a>
+          <a
+            aria-label="Page 2"
+          >
             2
           </a>
           ...
-          <a>
+          <a
+            aria-label="Page 6"
+          >
             6
           </a>
           <a
+            aria-label="Page 7"
             class=""
           >
             7
           </a>
-          <a>
+          <a
+            aria-label="Page 8"
+          >
             8
           </a>
           ...
-          <a>
+          <a
+            aria-label="Page 14"
+          >
             14
           </a>
-          <a>
+          <a
+            aria-label="Page 15"
+          >
             15
           </a>
         </div>
@@ -691,29 +824,42 @@ Object {
         &lt; Prev
       </a>
       <div>
-        <a>
+        <a
+          aria-label="Page 1"
+        >
           1
         </a>
-        <a>
+        <a
+          aria-label="Page 2"
+        >
           2
         </a>
         ...
-        <a>
+        <a
+          aria-label="Page 6"
+        >
           6
         </a>
         <a
+          aria-label="Page 7"
           class=""
         >
           7
         </a>
-        <a>
+        <a
+          aria-label="Page 8"
+        >
           8
         </a>
         ...
-        <a>
+        <a
+          aria-label="Page 14"
+        >
           14
         </a>
-        <a>
+        <a
+          aria-label="Page 15"
+        >
           15
         </a>
       </div>
@@ -790,31 +936,48 @@ Object {
           &lt; Prev
         </a>
         <div>
-          <a>
+          <a
+            aria-label="Page 1"
+          >
             1
           </a>
-          <a>
+          <a
+            aria-label="Page 2"
+          >
             2
           </a>
-          <a>
+          <a
+            aria-label="Page 3"
+          >
             3
           </a>
-          <a>
+          <a
+            aria-label="Page 4"
+          >
             4
           </a>
-          <a>
+          <a
+            aria-label="Page 5"
+          >
             5
           </a>
-          <a>
+          <a
+            aria-label="Page 6"
+          >
             6
           </a>
-          <a>
+          <a
+            aria-label="Page 7"
+          >
             7
           </a>
-          <a>
+          <a
+            aria-label="Page 8"
+          >
             8
           </a>
           <a
+            aria-label="Page 9"
             class=""
           >
             9
@@ -836,31 +999,48 @@ Object {
         &lt; Prev
       </a>
       <div>
-        <a>
+        <a
+          aria-label="Page 1"
+        >
           1
         </a>
-        <a>
+        <a
+          aria-label="Page 2"
+        >
           2
         </a>
-        <a>
+        <a
+          aria-label="Page 3"
+        >
           3
         </a>
-        <a>
+        <a
+          aria-label="Page 4"
+        >
           4
         </a>
-        <a>
+        <a
+          aria-label="Page 5"
+        >
           5
         </a>
-        <a>
+        <a
+          aria-label="Page 6"
+        >
           6
         </a>
-        <a>
+        <a
+          aria-label="Page 7"
+        >
           7
         </a>
-        <a>
+        <a
+          aria-label="Page 8"
+        >
           8
         </a>
         <a
+          aria-label="Page 9"
           class=""
         >
           9
@@ -939,26 +1119,39 @@ Object {
           &lt; Prev
         </a>
         <div>
-          <a>
+          <a
+            aria-label="Page 1"
+          >
             1
           </a>
-          <a>
+          <a
+            aria-label="Page 2"
+          >
             2
           </a>
-          <a>
+          <a
+            aria-label="Page 3"
+          >
             3
           </a>
-          <a>
+          <a
+            aria-label="Page 4"
+          >
             4
           </a>
-          <a>
+          <a
+            aria-label="Page 5"
+          >
             5
           </a>
           ...
-          <a>
+          <a
+            aria-label="Page 9"
+          >
             9
           </a>
           <a
+            aria-label="Page 10"
             class=""
           >
             10
@@ -980,26 +1173,39 @@ Object {
         &lt; Prev
       </a>
       <div>
-        <a>
+        <a
+          aria-label="Page 1"
+        >
           1
         </a>
-        <a>
+        <a
+          aria-label="Page 2"
+        >
           2
         </a>
-        <a>
+        <a
+          aria-label="Page 3"
+        >
           3
         </a>
-        <a>
+        <a
+          aria-label="Page 4"
+        >
           4
         </a>
-        <a>
+        <a
+          aria-label="Page 5"
+        >
           5
         </a>
         ...
-        <a>
+        <a
+          aria-label="Page 9"
+        >
           9
         </a>
         <a
+          aria-label="Page 10"
           class=""
         >
           10
@@ -1078,29 +1284,42 @@ Object {
           &lt; Prev
         </a>
         <div>
-          <a>
+          <a
+            aria-label="Page 1"
+          >
             1
           </a>
-          <a>
+          <a
+            aria-label="Page 2"
+          >
             2
           </a>
           ...
-          <a>
+          <a
+            aria-label="Page 9"
+          >
             9
           </a>
           <a
+            aria-label="Page 10"
             class=""
           >
             10
           </a>
-          <a>
+          <a
+            aria-label="Page 11"
+          >
             11
           </a>
           ...
-          <a>
+          <a
+            aria-label="Page 14"
+          >
             14
           </a>
-          <a>
+          <a
+            aria-label="Page 15"
+          >
             15
           </a>
         </div>
@@ -1120,29 +1339,42 @@ Object {
         &lt; Prev
       </a>
       <div>
-        <a>
+        <a
+          aria-label="Page 1"
+        >
           1
         </a>
-        <a>
+        <a
+          aria-label="Page 2"
+        >
           2
         </a>
         ...
-        <a>
+        <a
+          aria-label="Page 9"
+        >
           9
         </a>
         <a
+          aria-label="Page 10"
           class=""
         >
           10
         </a>
-        <a>
+        <a
+          aria-label="Page 11"
+        >
           11
         </a>
         ...
-        <a>
+        <a
+          aria-label="Page 14"
+        >
           14
         </a>
-        <a>
+        <a
+          aria-label="Page 15"
+        >
           15
         </a>
       </div>
@@ -1219,29 +1451,42 @@ Object {
           &lt; Prev
         </a>
         <div>
-          <a>
+          <a
+            aria-label="Page 1"
+          >
             1
           </a>
-          <a>
+          <a
+            aria-label="Page 2"
+          >
             2
           </a>
           ...
-          <a>
+          <a
+            aria-label="Page 10"
+          >
             10
           </a>
           <a
+            aria-label="Page 11"
             class=""
           >
             11
           </a>
-          <a>
+          <a
+            aria-label="Page 12"
+          >
             12
           </a>
           ...
-          <a>
+          <a
+            aria-label="Page 14"
+          >
             14
           </a>
-          <a>
+          <a
+            aria-label="Page 15"
+          >
             15
           </a>
         </div>
@@ -1261,29 +1506,42 @@ Object {
         &lt; Prev
       </a>
       <div>
-        <a>
+        <a
+          aria-label="Page 1"
+        >
           1
         </a>
-        <a>
+        <a
+          aria-label="Page 2"
+        >
           2
         </a>
         ...
-        <a>
+        <a
+          aria-label="Page 10"
+        >
           10
         </a>
         <a
+          aria-label="Page 11"
           class=""
         >
           11
         </a>
-        <a>
+        <a
+          aria-label="Page 12"
+        >
           12
         </a>
         ...
-        <a>
+        <a
+          aria-label="Page 14"
+        >
           14
         </a>
-        <a>
+        <a
+          aria-label="Page 15"
+        >
           15
         </a>
       </div>
@@ -1360,28 +1618,41 @@ Object {
           &lt; Prev
         </a>
         <div>
-          <a>
+          <a
+            aria-label="Page 1"
+          >
             1
           </a>
-          <a>
+          <a
+            aria-label="Page 2"
+          >
             2
           </a>
-          <a>
+          <a
+            aria-label="Page 3"
+          >
             3
           </a>
-          <a>
+          <a
+            aria-label="Page 4"
+          >
             4
           </a>
-          <a>
+          <a
+            aria-label="Page 5"
+          >
             5
           </a>
           ...
           <a
+            aria-label="Page 14"
             class=""
           >
             14
           </a>
-          <a>
+          <a
+            aria-label="Page 15"
+          >
             15
           </a>
         </div>
@@ -1401,28 +1672,41 @@ Object {
         &lt; Prev
       </a>
       <div>
-        <a>
+        <a
+          aria-label="Page 1"
+        >
           1
         </a>
-        <a>
+        <a
+          aria-label="Page 2"
+        >
           2
         </a>
-        <a>
+        <a
+          aria-label="Page 3"
+        >
           3
         </a>
-        <a>
+        <a
+          aria-label="Page 4"
+        >
           4
         </a>
-        <a>
+        <a
+          aria-label="Page 5"
+        >
           5
         </a>
         ...
         <a
+          aria-label="Page 14"
           class=""
         >
           14
         </a>
-        <a>
+        <a
+          aria-label="Page 15"
+        >
           15
         </a>
       </div>

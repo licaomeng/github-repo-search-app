@@ -6,6 +6,14 @@ body {
     sans-serif;
   color: var(--color-fg-default);
   background-color: var(--color-canvas-default);
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
 }
 
 :root {

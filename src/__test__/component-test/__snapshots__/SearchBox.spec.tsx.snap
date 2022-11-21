@@ -7,7 +7,7 @@ exports[`renders the search-box: in header 1`] = `
     data-testid="search-box-form"
   >
     <input
-      aria-label="Search GitHub"
+      aria-label="Search GitHub Repo"
       autocapitalize="off"
       autocomplete="off"
       maxlength="256"
@@ -28,7 +28,7 @@ exports[`renders the search-box: not in header 1`] = `
     data-testid="search-box-form"
   >
     <input
-      aria-label="Search GitHub"
+      aria-label="Search GitHub Repo"
       autocapitalize="off"
       autocomplete="off"
       maxlength="256"

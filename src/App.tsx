@@ -30,12 +30,6 @@ function App() {
 
   const onSelectTheme = (theme: "dark" | "light") => {
     setTheme(theme);
-
-    if (theme === "dark") {
-      document.body.classList.add("dark-mode");
-    } else {
-      document.body.classList.remove("dark-mode");
-    }
   };
 
   let intervalId = 0;
