@@ -134,6 +134,7 @@ Using CSS module to prevent css globle pollution: https://create-react-app.dev/d
 
 
 # Testing
+All test is under `src/__test__`, run `npm run test`
 
 Writing tests can help you improve efficiency,  ensure quality,  avoid regression, etc. The front-end testing usually include: unit testing, component testing, integration test.
 
