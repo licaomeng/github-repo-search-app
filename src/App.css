@@ -18,10 +18,13 @@
 
 .init-banner h2 {
   margin-inline-start: 20px;
+  font-size: 1.1em;
+  font-weight: 400;
 }
 
 .init-banner h2 strong{
   font-size: 1.2em;
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {
