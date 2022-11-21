@@ -22,7 +22,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
-    "predeploy": "npm run build",
+    "predeploy": "rm -rf build & npm run build",
     "deploy": "gh-pages -d build"
   },
   "jest": {
