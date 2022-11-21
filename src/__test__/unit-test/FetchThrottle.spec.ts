@@ -1,4 +1,4 @@
-import { throttle } from "../utils";
+import { throttle } from "../../utils";
 import type { RequestInterface } from "@octokit/types";
 
 const sleep = (wait: number) => new Promise(resolve => setTimeout(resolve, wait));

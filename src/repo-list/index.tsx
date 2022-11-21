@@ -1,4 +1,5 @@
 import * as React from "react";
+import { stringToColor } from "../utils";
 import styles from "./RepoList.module.css";
 
 type dataList = {
@@ -13,25 +14,6 @@ type dataList = {
 
 interface ListProps {
     data: dataList
-}
-
-function stringToColor(str: string) {
-    let hash = 0;
-    let color = "#";
-
-    str = String(str);
-
-    for (let i = 0; i < str.length; i++) {
-        hash = str.charCodeAt(i) + ((hash << 5) - hash);
-    }
-
-    for (let i = 0; i < 3; i++) {
-        const value = (hash >> (i * 8)) & 0xFF;
-
-        color += ("00" + value.toString(16)).substr(-2);
-    }
-
-    return color;
 }
 
 export function RepoList({ data }: ListProps) {
@@ -52,10 +34,15 @@ export function RepoList({ data }: ListProps) {
                         </svg>
                         {item.stargazers_count}
                     </p>
-                    <p>
-                        <span className={styles.repoLanguageColor} style={{ backgroundColor: stringToColor(item.language) }}></span>
-                        {item.language}
-                    </p>
+                    {
+                        item.language && <p>
+                            <span
+                                className={styles.repoLanguageColor}
+                                style={{ backgroundColor: stringToColor(item.language) }}
+                            ></span>
+                            {item.language}
+                        </p>
+                    }
                     <p>Updated on {new Date(item.updated_at)?.toDateString()}</p>
                 </div>
             </li>
