@@ -34,6 +34,7 @@
 }
 
 .github-repo-search-page {
+  height: 100%;
   color: var(--color-fg-default);
   background-color: var(--color-canvas-default);
 }
