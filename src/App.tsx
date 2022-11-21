@@ -38,9 +38,9 @@ function App() {
   const [progress, setProgress] = useState(0);
   const [theme, setTheme] = useState("light");
 
-  const onSelectTheme = (theme: "dark" | "light") => {
+  function onSelectTheme(theme: "dark" | "light") {
     setTheme(theme);
-  };
+  }
 
   async function fetchRepo(q = "", page = 1, per_page = PER_PAGE) {
     if (q === "") return;
