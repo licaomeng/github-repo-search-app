@@ -1,7 +1,7 @@
 import * as React from "react";
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
-import { Pagination } from "../../pagination";
+import { Pagination } from "../../components/pagination";
 import { BrowserRouter as Router } from "react-router-dom";
 
 test("renders the pagination component: currentPage={7} totalPages={15}", () => {

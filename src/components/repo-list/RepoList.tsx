@@ -1,6 +1,7 @@
 import * as React from "react";
-import { stringToColor } from "../utils";
-import { Star, Repo } from "../assets";
+import { stringToColor } from "../../utils";
+import { ReactComponent as Star } from "../icons/star.svg";
+import { ReactComponent as Repo } from "../icons/repo.svg";
 import styles from "./RepoList.module.css";
 
 type dataList = {

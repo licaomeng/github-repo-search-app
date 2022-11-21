@@ -1,7 +1,7 @@
 import * as React from "react";
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
-import { RepoList } from "../../repo-list";
+import { RepoList } from "../../components/repo-list";
 
 const mockData_1 = [{
     full_name: "marcosesperon/Messi",

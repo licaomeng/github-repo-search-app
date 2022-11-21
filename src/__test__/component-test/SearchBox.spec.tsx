@@ -1,7 +1,7 @@
 import * as React from "react";
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
-import { SearchBox } from "../../search-box";
+import { SearchBox } from "../../components/search-box";
 import { BrowserRouter as Router } from "react-router-dom";
 
 test("renders the search-box: in header", () => {

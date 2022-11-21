@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import { Octicon } from "../assets";
+import { ReactComponent as Octicon } from "../icons/octicon.svg";
 import styles from "./Header.module.css";
 
 type HeaderProps = {

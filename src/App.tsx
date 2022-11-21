@@ -3,12 +3,12 @@ import { Octokit } from "@octokit/core";
 import { retry } from "@octokit/plugin-retry";
 import { useSearchParams } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
-import { Pagination } from "./pagination";
-import { RepoList } from "./repo-list";
-import { Header } from "./header";
-import { SearchBox } from "./search-box";
+import { Pagination } from "./components/pagination";
+import { RepoList } from "./components/repo-list";
+import { Header } from "./components/header";
+import { SearchBox } from "./components/search-box";
 import { throttle, ErrorBoundary } from "./utils";
-import { Search } from "./assets";
+import { ReactComponent as Search } from "./components/icons/search.svg";
 import "./App.css";
 
 const MyOctokit = Octokit.plugin(retry);
