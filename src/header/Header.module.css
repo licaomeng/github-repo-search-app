@@ -17,8 +17,6 @@
 }
 
 .headerLink {
-    display: flex;
-    align-items: center;
     font-weight: 600;
     color: var(--color-header-logo);
     white-space: nowrap;
