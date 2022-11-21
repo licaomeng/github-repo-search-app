@@ -7,13 +7,21 @@ import { Pagination } from "./components/pagination";
 import { RepoList } from "./components/repo-list";
 import { Header } from "./components/header";
 import { SearchBox } from "./components/search-box";
-import { throttle, ErrorBoundary } from "./utils";
+import { throttle, ErrorBoundary, progressWrapper } from "./utils";
 import { ReactComponent as Search } from "./components/icons/search.svg";
 import "./App.css";
 
 const MyOctokit = Octokit.plugin(retry);
-const octokit = new MyOctokit({ request: { retries: 1 } });
+const octokit = new MyOctokit({
+  // API rate limit exceeded 
+  // Authenticated requests get a higher rate limit.
+  retry: { doNotRetry: [403] },
+  request: { retries: 1 }
+});
 const PER_PAGE = 5;
+const FETCH_REPO_URL = "GET /search/repositories?q={q}&per_page={per_page}";
+
+const darkMatchMedia = window.matchMedia("(prefers-color-scheme: dark)");
 
 const initBanner = (
   <h2><Search />Search more than <strong>358M</strong> repositories</h2>
@@ -34,40 +42,25 @@ function App() {
     setTheme(theme);
   };
 
-  let intervalId = 0;
-
   async function fetchRepo(q = "", page = 1, per_page = PER_PAGE) {
     if (q === "") return;
 
-    setProgress(0);
+    const { data } = await fetchThrottle(FETCH_REPO_URL, { q, page, per_page }) as any;
 
-    intervalId = window.setInterval(() => {
-      setProgress((progress) => progress + 10);
-      window.clearInterval(intervalId);
-    }, 500);
-
-    const { data } = await fetchThrottle("GET /search/repositories?q={q}&per_page={per_page}", {
-      q,
-      page,
-      per_page
-    });
-
-    setProgress(100);
-    setRepoList(data.items);
-    setTotalCount(data.total_count);
+    return data;
   }
 
   useEffect(() => {
     // Add listener to update styles
-    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => onSelectTheme(e.matches ? "dark" : "light"));
+    darkMatchMedia.addEventListener("change", e => onSelectTheme(e.matches ? "dark" : "light"));
 
     // Setup dark/light mode for the first time
-    onSelectTheme(window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    onSelectTheme(darkMatchMedia.matches ? "dark" : "light");
 
     // Remove listener
     return () => {
-      window.clearInterval(intervalId);
-      window.matchMedia("(prefers-color-scheme: dark)").removeEventListener("change", () => { });
+      // window.clearInterval(intervalId);
+      darkMatchMedia.removeEventListener("change", () => { });
     };
   }, []);
 
@@ -76,9 +69,17 @@ function App() {
     const q = searchParams.get("q") || "";
     const page = Number(searchParams.get("p") || 1);
 
-    setQuery(q || "");
-    setCurrentPage(Number(page) || 1);
-    fetchRepo(q, page);
+    setQuery(q);
+    setCurrentPage(page || 1);
+    const fetch = progressWrapper(fetchRepo, setProgress);
+
+    fetch(q, page).then(res => {
+      if (res) {
+        setRepoList(res.items);
+        setTotalCount(res.total_count);
+      }
+    });
+
   }, [searchParams]);
 
   // Only the first 1000 search results are available

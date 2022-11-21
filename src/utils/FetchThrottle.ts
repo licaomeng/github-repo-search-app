@@ -1,22 +1,18 @@
-import type { RequestInterface, Endpoints, RequestParameters, OctokitResponse } from "@octokit/types";
+// Utility helper to get the type out of a Promise 
+type ReturnPromiseType<T extends (...args: any) => Promise<any>> = T extends (...args: any) => Promise<infer R> ? R : any;
 
-export function throttle(fetch: RequestInterface<object>, wait: number) {
+export function throttle<F extends (...args: any[]) => any>(fetch: F, wait: number) {
     let lastRun = 0;
     let timeoutId: number = 0;
-    let result: OctokitResponse<any, number> | PromiseLike<OctokitResponse<any, number>>;
 
-    async function throttled(
-        route: keyof Endpoints | "GET /search/repositories?q={q}&per_page={per_page}",
-        options?: RequestParameters | undefined
-    ): Promise<OctokitResponse<any, number>> {
+    async function throttled(...args: Parameters<F>): Promise<ReturnPromiseType<F> | undefined> {
         const currentWait = lastRun + wait - Date.now();
         const shouldRun = currentWait <= 0;
 
         if (shouldRun) {
             lastRun = Date.now();
-            result = await fetch(route, options);
 
-            return result;
+            return await fetch(...args);
         }
 
         if (timeoutId) {
@@ -25,7 +21,7 @@ export function throttle(fetch: RequestInterface<object>, wait: number) {
 
         return await new Promise((resolve) => {
             timeoutId = window.setTimeout(() => {
-                resolve(throttled(route, options));
+                resolve(throttled(...args));
             }, currentWait);
         });
     }

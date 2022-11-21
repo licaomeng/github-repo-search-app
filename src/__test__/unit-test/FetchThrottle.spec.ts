@@ -1,5 +1,4 @@
 import { throttle } from "../../utils";
-import type { RequestInterface } from "@octokit/types";
 
 const sleep = (wait: number) => new Promise(resolve => setTimeout(resolve, wait));
 
@@ -20,7 +19,7 @@ test("fetch throttling", async () => {
 
     fetch.mockReturnValue(Promise.resolve({ data: mockData }));
     
-    const throttleFetch = throttle(fetch as any as RequestInterface<object>, 1000);
+    const throttleFetch = throttle(fetch, 1000);
 
     // 1st call
     throttleFetch(route, {
@@ -50,7 +49,7 @@ test("fetch throttling", async () => {
     const { data } = await throttleFetch(route, {
         q: "Messi",
         "per_page": 1
-    });
+    }) as any;
 
     expect(fetch).toHaveBeenCalledTimes(3);
     expect(data).toBe(mockData);
