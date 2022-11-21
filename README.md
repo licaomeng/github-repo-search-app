@@ -1,3 +1,5 @@
+# Live Site Demo
+https://licaomeng.github.io/github-repo-search-app/
 # try to demo
 **STEP 1:** Perform `yarn install` or `npm install`
 
