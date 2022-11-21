@@ -1,30 +1,12 @@
 import * as React from "react";
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
+import { BrowserRouter as Router } from "react-router-dom";
 import { Header } from "../../header";
+import { SearchBox } from "../../search-box";
 
 test("[Desktop]renders the header component", () => {
-    Object.defineProperty(window, "innerHeight", {
-        writable: true,
-        configurable: true,
-        value: 1000,
-    });
-    window.dispatchEvent(new Event("resize"));
+    const { container } = render(<Router><Header><SearchBox isInHeader={true}></SearchBox></Header></Router>);
 
-    const view = render(<Header></Header>);
-
-    expect(view).toMatchSnapshot();
-});
-
-test("[Mobile]renders the header component", () => {
-    Object.defineProperty(window, "innerHeight", {
-        writable: true,
-        configurable: true,
-        value: 768,
-    });
-    window.dispatchEvent(new Event("resize"));
-    
-    const view = render(<Header></Header>);
-
-    expect(view).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
 });

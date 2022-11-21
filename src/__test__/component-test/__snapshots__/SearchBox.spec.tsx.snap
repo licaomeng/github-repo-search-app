@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the search-box: in header 1`] = `
+<div>
+  <form
+    class=""
+    data-testid="search-box-form"
+  >
+    <input
+      aria-label="Search GitHub"
+      autocapitalize="off"
+      autocomplete="off"
+      maxlength="256"
+      name="q"
+      placeholder="Search GitHub Repo"
+      spellcheck="false"
+      type="text"
+      value=""
+    />
+  </form>
+</div>
+`;
+
+exports[`renders the search-box: not in header 1`] = `
+<div>
+  <form
+    class=""
+    data-testid="search-box-form"
+  >
+    <input
+      aria-label="Search GitHub"
+      autocapitalize="off"
+      autocomplete="off"
+      maxlength="256"
+      name="q"
+      placeholder="Search GitHub Repo"
+      spellcheck="false"
+      type="text"
+      value=""
+    />
+    <button
+      data-testid="search-box-submit-btn"
+      type="submit"
+    >
+      Search
+    </button>
+  </form>
+</div>
+`;
