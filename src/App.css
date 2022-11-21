@@ -47,8 +47,11 @@
 }
 
 .init-banner h2 {
-  font-size: 1.2em;
   margin-inline-start: 20px;
+}
+
+.init-banner h2 strong{
+  font-size: 1.2em;
 }
 
 @media (min-width: 768px) {

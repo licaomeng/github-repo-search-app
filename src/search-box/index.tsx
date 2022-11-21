@@ -1,3 +1,4 @@
+import * as React from "react";
 import { useState } from "react";
 import styles from "./SearchBox.module.css";
 import { useSearchParams } from "react-router-dom";
@@ -23,7 +24,7 @@ export function SearchBox(props: SearchBoxProp) {
     }
 
     return (
-        <form className={cx(styles.form)} onSubmit={handleSubmit}>
+        <form data-testid="search-box-form" className={cx(styles.form)} onSubmit={handleSubmit}>
             <input
                 aria-label="Search GitHub"
                 autoCapitalize="off"
@@ -39,7 +40,7 @@ export function SearchBox(props: SearchBoxProp) {
                 onChange={handleChange}
             ></input>
             {
-                !props.isInHeader && <button className={styles.btn} type="submit" onClick={handleSubmit}>Search</button>
+                !props.isInHeader && <button data-testid="search-box-submit-btn" className={styles.btn} type="submit" onClick={handleSubmit}>Search</button>
             }
             
         </form>

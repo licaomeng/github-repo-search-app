@@ -6,6 +6,7 @@ import { SearchBox } from "./search-box";
 import { Octokit } from "@octokit/core";
 import { useSearchParams } from "react-router-dom";
 import { throttle } from "./utils";
+import { Search } from "./assets";
 import LoadingBar from "react-top-loading-bar";
 import "./App.css";
 
@@ -14,10 +15,7 @@ const PER_PAGE = 5;
 
 const initBanner = (
   <h2>
-    <svg className="octicon" aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true">
-      <path fillRule="evenodd" d="M10.25 2a8.25 8.25 0 105.28 14.59l5.69 5.69a.75.75 0 101.06-1.06l-5.69-5.69A8.25 8.25 0 0010.25 2zM3.5 10.25a6.75 6.75 0 1113.5 0 6.75 6.75 0 01-13.5 0z"></path>
-    </svg>
-    Search more than <strong>358M</strong> repositories
+    <Search />Search more than <strong>358M</strong> repositories
   </h2>
 );
 
