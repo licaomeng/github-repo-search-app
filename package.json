@@ -2,6 +2,7 @@
   "name": "github-repo-search-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://licaomeng.github.io/github-repo-search-app",
   "dependencies": {
     "@octokit/core": "^4.1.0",
     "@types/jest": "^27.0.1",
