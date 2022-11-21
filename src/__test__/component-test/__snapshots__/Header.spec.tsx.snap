@@ -22,6 +22,7 @@ Object {
               fill-rule="evenodd"
             />
           </svg>
+          <span />
         </a>
       </div>
     </div>
@@ -44,6 +45,7 @@ Object {
             fill-rule="evenodd"
           />
         </svg>
+        <span />
       </a>
     </div>
   </div>,
@@ -123,6 +125,7 @@ Object {
               fill-rule="evenodd"
             />
           </svg>
+          <span />
         </a>
       </div>
     </div>
@@ -145,6 +148,7 @@ Object {
             fill-rule="evenodd"
           />
         </svg>
+        <span />
       </a>
     </div>
   </div>,
