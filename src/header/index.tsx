@@ -33,6 +33,7 @@ export function Header(props: HeaderProps) {
         <div className={styles.header}>
             <a
                 ref={ref}
+                target="_self"
                 aria-label="Homepage"
                 className={styles.headerLink}
                 href={process.env.NODE_ENV === "production" ? "/github-repo-search-app" : "/"}>
