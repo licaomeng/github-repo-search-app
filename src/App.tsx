@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Octokit } from "@octokit/core";
+import { retry } from "@octokit/plugin-retry";
 import { useSearchParams } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 import { Pagination } from "./pagination";
@@ -10,7 +11,8 @@ import { throttle, ErrorBoundary } from "./utils";
 import { Search } from "./assets";
 import "./App.css";
 
-const octokit = new Octokit();
+const MyOctokit = Octokit.plugin(retry);
+const octokit = new MyOctokit({ request: { retries: 1 } });
 const PER_PAGE = 5;
 
 const initBanner = (
@@ -65,8 +67,7 @@ function App() {
     // Remove listener
     return () => {
       window.clearInterval(intervalId);
-      window.matchMedia("(prefers-color-scheme: dark)").removeEventListener("change", () => {
-      });
+      window.matchMedia("(prefers-color-scheme: dark)").removeEventListener("change", () => { });
     };
   }, []);
 
@@ -77,9 +78,7 @@ function App() {
 
     setQuery(q || "");
     setCurrentPage(Number(page) || 1);
-
     fetchRepo(q, page);
-
   }, [searchParams]);
 
   // Only the first 1000 search results are available

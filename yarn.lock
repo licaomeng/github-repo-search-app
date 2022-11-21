@@ -1559,7 +1559,7 @@
   dependencies:
     "@octokit/types" "^8.0.0"
 
-"@octokit/core@^4.1.0":
+"@octokit/core@^4.1.0", "@octokit/core@>=3":
   "integrity" "sha512-Czz/59VefU+kKDy+ZfDwtOIYIkFjExOKf+HA92aiTZJ6EfWpFzYQWw0l54ji8bVmyhc+mGaLUbSUmXazG7z5OQ=="
   "resolved" "https://registry.npmmirror.com/@octokit/core/-/core-4.1.0.tgz"
   "version" "4.1.0"
@@ -1594,6 +1594,14 @@
   "integrity" "sha512-HNWisMYlR8VCnNurDU6os2ikx0s0VyEjDYHNS/h4cgb8DeOxQ0n72HyinUtdDVxJhFy3FWLGl0DJhfEWk3P5Iw=="
   "resolved" "https://registry.npmmirror.com/@octokit/openapi-types/-/openapi-types-14.0.0.tgz"
   "version" "14.0.0"
+
+"@octokit/plugin-retry@^4.0.3":
+  "integrity" "sha512-tDR+4Cs9GPPNJ7/RjTEq5ty2wqjKe1hRUV7/hch+nORow5LshlHXTT1qfYNsFPw3S9szvFFAfDEFq/xwrEpL7g=="
+  "resolved" "https://registry.npmmirror.com/@octokit/plugin-retry/-/plugin-retry-4.0.3.tgz"
+  "version" "4.0.3"
+  dependencies:
+    "@octokit/types" "^8.0.0"
+    "bottleneck" "^2.15.3"
 
 "@octokit/request-error@^3.0.0":
   "integrity" "sha512-WMNOFYrSaX8zXWoJg9u/pKgWPo94JXilMLb2VManNOby9EZxrQaBe/QSC4a1TzpAlpxofg2X/jMnCyZgL6y7eg=="
@@ -3033,6 +3041,11 @@
   "integrity" "sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww=="
   "resolved" "https://registry.npmmirror.com/boolbase/-/boolbase-1.0.0.tgz"
   "version" "1.0.0"
+
+"bottleneck@^2.15.3":
+  "integrity" "sha512-VHiNCbI1lKdl44tGrhNfU3lup0Tj/ZBMJB5/2ZbNXRCPuRCO7ed2mgcK4r17y+KB2EfuYuRaVlwNbAeaWGSpbw=="
+  "resolved" "https://registry.npmmirror.com/bottleneck/-/bottleneck-2.19.5.tgz"
+  "version" "2.19.5"
 
 "brace-expansion@^1.1.7":
   "integrity" "sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA=="
