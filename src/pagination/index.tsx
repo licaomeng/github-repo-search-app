@@ -28,11 +28,11 @@ export function Pagination(props: PaginationProps) {
     function navBtn(isNext: boolean, isDisabled: boolean) {
         const text = isNext ? "Next >" : "< Prev";
         const style = isNext ? styles.nextPage : styles.prevPage;
-        
+
         if (isDisabled) {
             return <span className={cx(styles.btn, style, styles.disabled)}>{text}</span>;
         }
-    
+
         return <a onClick={handleClick(isNext ? currentPage + 1 : currentPage - 1)} className={cx(styles.btn, style)}>{text}</a>;
     }
 
@@ -70,11 +70,11 @@ export function Pagination(props: PaginationProps) {
 
     return (
         <div className={styles.paginationContainer}>
-            { currentPage === 1 ? navBtn(false, true) : navBtn(false, false) }
+            {currentPage === 1 ? navBtn(false, true) : navBtn(false, false)}
             <div className={styles.nav}>
                 {renderNav()}
             </div>
-            { currentPage === totalPages ? navBtn(true, true) : navBtn(true, false) }
+            {currentPage === totalPages ? navBtn(true, true) : navBtn(true, false)}
         </div>
     );
 }

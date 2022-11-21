@@ -24,25 +24,32 @@ export function SearchBox(props: SearchBoxProp) {
     }
 
     return (
-        <form data-testid="search-box-form" className={cx(styles.form)} onSubmit={handleSubmit}>
+        <form
+            data-testid="search-box-form"
+            className={cx(styles.form)}
+            onSubmit={handleSubmit}>
             <input
                 aria-label="Search GitHub"
                 autoCapitalize="off"
                 autoComplete="off"
                 className={styles.searchBox}
                 name="q"
-                maxLength={256} 
+                maxLength={256}
                 placeholder="Search GitHub Repo"
                 spellCheck="false"
                 type="text"
                 value={text}
                 onClick={(e) => e.stopPropagation()}
                 onChange={handleChange}
-            ></input>
+            />
             {
-                !props.isInHeader && <button data-testid="search-box-submit-btn" className={styles.btn} type="submit" onClick={handleSubmit}>Search</button>
+                !props.isInHeader && <button
+                    type="submit"
+                    className={styles.btn}
+                    data-testid="search-box-submit-btn"
+                    onClick={handleSubmit}
+                >Search</button>
             }
-            
         </form>
     );
 }

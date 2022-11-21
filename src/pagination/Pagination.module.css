@@ -34,7 +34,8 @@
     background-color: #0969da;
 }
 
-.nextPage, .prevPage {
+.nextPage,
+.prevPage {
     color: #0969da;
 }
 
@@ -49,7 +50,8 @@
         display: none;
     }
 
-    .nextPage, .prevPage {
+    .nextPage,
+    .prevPage {
         width: 50%;
     }
 }

@@ -14,9 +14,7 @@ const octokit = new Octokit();
 const PER_PAGE = 5;
 
 const initBanner = (
-  <h2>
-    <Search />Search more than <strong>358M</strong> repositories
-  </h2>
+  <h2><Search />Search more than <strong>358M</strong> repositories</h2>
 );
 
 const fetchThrottle = throttle(octokit.request, 2000);
