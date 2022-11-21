@@ -5,7 +5,7 @@ import { Header } from "./header";
 import { SearchBox } from "./search-box";
 import { Octokit } from "@octokit/core";
 import { useSearchParams } from "react-router-dom";
-import { throttle } from "./utils";
+import { throttle, ErrorBoundary } from "./utils";
 import { Search } from "./assets";
 import LoadingBar from "react-top-loading-bar";
 import "./App.css";
@@ -81,12 +81,24 @@ function App() {
       {
         query === "" ? <>
           <span className="init-banner">{initBanner}</span>
-          <span id="init-search-box"><SearchBox isInHeader={false}></SearchBox></span>
+          <span id="init-search-box">
+            <ErrorBoundary>
+              <SearchBox isInHeader={false}></SearchBox>
+            </ErrorBoundary>
+          </span>
         </> : <>
-          <span id="search-box"><SearchBox isInHeader={false}></SearchBox></span>
+          <span id="search-box">
+            <ErrorBoundary>
+              <SearchBox isInHeader={false}></SearchBox>
+            </ErrorBoundary>
+          </span>
           <div className="total-count">{totalCount.toLocaleString()} available repository results</div>
-          <RepoList data={repoList}></RepoList>
-          <Pagination currentPage={currentPage} totalPages={totalPages}></Pagination>
+          <ErrorBoundary>
+            <RepoList data={repoList}></RepoList>
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <Pagination currentPage={currentPage} totalPages={totalPages}></Pagination>
+          </ErrorBoundary>
         </>
       }
     </>
