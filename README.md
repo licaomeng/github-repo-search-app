@@ -132,7 +132,10 @@ Using CSS module to prevent css globle pollution: https://create-react-app.dev/d
 
 
 # Performance
-- Throttling fetch
+## Throttling fetch
+## useRef
+`useRef vs useState`: for form-input senario, best practice is using useRef instead of useState(with onClick) to prevent component frequent rendering.
+
 
 
 # Testing
