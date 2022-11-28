@@ -19,12 +19,12 @@ Perform `yarn build` or `npm run build`, `./build` would be generated for produc
 
 # Requirement Spec
 - The page should meet the basic requirement on view/search/pagination/share
-- Should consider the throttle use cases including but not limited to enter,  click pagination, etc.
+- Should consider the throttle use cases including but not limited to enter, click pagination, etc.
 - Should consider the performance. (garbage data collection, event listener management, animation, user interaction, etc.)
 - Should consider the corner cases. (no search result, without pagination, fetch failure, etc.)
-- Should work well on responsive window and desktop/mobile sides.
+- Should work well on responsive window and desktop/tablets/mobile sides.
 - Should consider basic user experience such as loading
-- Should consider the accessibility (ARIA, high contrast, etc.).
+- Should consider the accessibility (ARIA, high contrast, theme mode, etc.).
 - Should consider the localization (RTL, translation).
 
 # Component architecture
@@ -99,19 +99,19 @@ Octokit provides two approaches: Restful & GraphQL. For this scenario, GraphQL d
 # Page Responsive
 Using Flexbox & CSS3 to allow the page responsive, providing Desktop/Pad/Mobile experience to users. The layout of header/search-box/navigator can be changed according to the window size.
 
-## Desktop
+## Desktop (min-width: 768px)
 <img width="906" alt="image" src="https://user-images.githubusercontent.com/4949036/204261937-9231723f-d647-4e33-93fd-b3222230c4ab.png" />
 
 <img width="906" alt="image" src="https://user-images.githubusercontent.com/4949036/204261868-761949a5-b2d2-401c-89f3-09d11a8a0bce.png" />
 
 
-## Pad
+## Tablets (max-width: 768px) 
 <img width="475" alt="image" src="https://user-images.githubusercontent.com/4949036/204261709-e2bc05b6-54fa-421f-a2a5-d519f4077f8d.png" />
 
 <img width="472" alt="image" src="https://user-images.githubusercontent.com/4949036/204261587-81e0e368-de84-46c4-9e32-645e27ec891e.png" />
 
 
-## Mobile
+## Mobile (max-width: 480px)
 <img width="331" alt="image" src="https://user-images.githubusercontent.com/4949036/204261001-8205b43f-85e9-4d8b-8472-e0045e6810b2.png" />
 
 <img width="330" alt="image" src="https://user-images.githubusercontent.com/4949036/204261448-d82f4df5-cc35-480e-be0b-75e3a8e7f9bd.png" />
