@@ -71,7 +71,7 @@ Use the following API from GitHub: https://docs.github.com/en/rest/reference/sea
 
 > octokit: https://github.com/octokit/core.js
 
-Octokit provides two approaches: Restful & GraphQL. For this scenario, GraphQL doesn't have much advantages than GraphQL, I would choose Restful. Below is their comparison.
+Octokit provides two approaches: Restful & GraphQL. For this scenario, GraphQL doesn't have much advantages than Restful, I would choose Restful. Below is their comparison.
 
 ## Restful
 ### Pros
