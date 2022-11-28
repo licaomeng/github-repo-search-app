@@ -28,6 +28,8 @@ Perform `yarn build` or `npm run build`, `./build` would be generated for produc
 - Should consider the localization (RTL, translation).
 
 # Component architecture
+Except `LoadingBar`, customized those components: `Header, SearchBox, RepoList, Pagination`.
+
 <img width="408" alt="image" src="https://user-images.githubusercontent.com/4949036/204257688-bd40d558-80ea-4dc8-a57a-be5555ceca65.png" />
 
 ## Data entities
