@@ -2,7 +2,7 @@
 You can directly open the link below to see the page:
 
 https://licaomeng.github.io/github-repo-search-app/
-# try to demo locally
+# Try to demo locally
 **STEP 1:** Perform `yarn install` or `npm install`
 
 **STEP 2:** Perform `yarn start` or `npm start`
