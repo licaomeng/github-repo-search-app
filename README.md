@@ -28,7 +28,7 @@ Perform `yarn build` or `npm run build`, `./build` would be generated for produc
 - Should consider the localization (RTL, translation).
 
 # Component architecture
-<img width="425" alt="image" src="https://user-images.githubusercontent.com/4949036/204229602-184a704a-ec3a-4dc7-8efe-6e43da84222d.png" />
+<img width="408" alt="image" src="https://user-images.githubusercontent.com/4949036/204257688-bd40d558-80ea-4dc8-a57a-be5555ceca65.png" />
 
 ## Data entities
 Use TS notation to describe data entities to power your components
