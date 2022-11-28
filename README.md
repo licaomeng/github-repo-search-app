@@ -99,6 +99,33 @@ Octokit provides two approaches: Restful & GraphQL. For this scenario, GraphQL d
 # Page Responsive
 Using Flexbox & CSS3 to allow the page responsive, providing Desktop/Pad/Mobile experience to users. The layout of header/search-box/navigator can be changed according to the window size.
 
+## Desktop
+<img width="906" alt="image" src="https://user-images.githubusercontent.com/4949036/204261937-9231723f-d647-4e33-93fd-b3222230c4ab.png" />
+
+
+<img width="906" alt="image" src="https://user-images.githubusercontent.com/4949036/204261868-761949a5-b2d2-401c-89f3-09d11a8a0bce.png" />
+
+
+## Pad
+<img width="475" alt="image" src="https://user-images.githubusercontent.com/4949036/204261709-e2bc05b6-54fa-421f-a2a5-d519f4077f8d.png" />
+
+
+<img width="472" alt="image" src="https://user-images.githubusercontent.com/4949036/204261587-81e0e368-de84-46c4-9e32-645e27ec891e.png" />
+
+
+
+## Mobile
+<img width="331" alt="image" src="https://user-images.githubusercontent.com/4949036/204261001-8205b43f-85e9-4d8b-8472-e0045e6810b2.png" />
+
+<img width="330" alt="image" src="https://user-images.githubusercontent.com/4949036/204261448-d82f4df5-cc35-480e-be0b-75e3a8e7f9bd.png" />
+
+
+
+
+
+
+
+
 # Pagination
 - 5 items per page by default.
 - responsive with Desktop/Mobile
